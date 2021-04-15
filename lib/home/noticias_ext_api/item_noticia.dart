@@ -79,7 +79,7 @@ class ItemNoticia extends StatelessWidget {
                                   size: 20,
                                 ),
                                 onTap: () {
-                                  shareImage(noticia);
+                                  //shareImage(noticia);
                                 }),
                           ],
                         )
@@ -95,21 +95,4 @@ class ItemNoticia extends StatelessWidget {
     );
   }
 
-  void shareImage(New noticia) async {
-    String urlImage = noticia.urlToImage ??
-        "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png";
-    final response = await get(Uri.parse(urlImage));
-    String extension = urlImage.split(".").last;
-    final bytes = response.bodyBytes;
-
-    final Directory temp = await getTemporaryDirectory();
-    final File imageFile = File('${temp.path}/tempImage');
-    imageFile.writeAsBytesSync(response.bodyBytes);
-
-    Share.shareFiles(
-      ['${temp.path}/tempImage.$extension'],
-      text:
-          'Checa está noticia ${noticia.title ?? "Noticia"} - ${noticia.description ?? "Sin descripcion"}" \n ${noticia.url ?? ""}',
-    );
-  }
 }
