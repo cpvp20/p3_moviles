@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_login/bloc/auth_bloc.dart';
+import 'package:noticias/bloc/auth_bloc.dart';
 
 import 'bloc/login_bloc.dart';
 import 'form_body.dart';
@@ -15,12 +15,6 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   LoginBloc _loginBloc;
   bool _showLoading = false;
-
-  // @override
-  // void dispose() {
-  //   _loginBloc.close();
-  //   super.dispose();
-  // }
 
   void _anonymousLogIn(bool _) {
     print("anonimo");

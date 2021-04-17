@@ -57,7 +57,7 @@ class FormBody extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 32),
               child: Text(
-                "Acceso con correo.",
+                "Acceso con correo",
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
@@ -124,7 +124,7 @@ class FormBody extends StatelessWidget {
             Container(
               margin: EdgeInsets.symmetric(horizontal: 32),
               child: Text(
-                "Acceso rapido.",
+                "Acceso rapido",
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,

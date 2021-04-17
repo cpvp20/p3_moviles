@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
-import 'package:google_login/auth/user_auth_provider.dart';
+import 'package:noticias/auth/user_auth_provider.dart';
 
 part 'login_event.dart';
 part 'login_state.dart';

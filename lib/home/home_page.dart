@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_login/bloc/auth_bloc.dart';
-import 'package:google_login/home/noticias_firebase/mis_noticias.dart';
+import 'package:noticias/bloc/auth_bloc.dart';
+import 'package:noticias/home/noticias_firebase/my_noticias.dart';
 import 'noticias_ext_api/noticias.dart';
-import 'package:google_login/home/noticias_firebase/crear_noticia.dart';
+import 'package:noticias/home/noticias_firebase/create_noticia.dart';
 
-import 'noticias_firebase/bloc/my_news_bloc.dart';
+import 'noticias_firebase/bloc/my_noticias_bloc.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -23,13 +23,13 @@ class _HomePageState extends State<HomePage> {
   ];
   final _pagesList = [
     Noticias(),
-    MisNoticias(),
-    CrearNoticia(),
+    MyNoticias(),
+    CreateNoticia(),
   ];
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => MyNewsBloc(),
+      create: (context) => MyNoticiasBloc(),
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBar(
