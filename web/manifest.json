@@ -1,6 +1,6 @@
 {
-    "name": "google_login",
-    "short_name": "google_login",
+    "name": "noticias",
+    "short_name": "noticias",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

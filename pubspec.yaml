@@ -1,4 +1,4 @@
-name: google_login
+name: noticias
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -28,6 +28,8 @@ dependencies:
   hive: ^2.0.3
   hive_flutter: ^1.0.0
   connectivity: ^3.0.3
+  url_launcher: ^6.0.3
+
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +49,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/app_icon.png
-    - assets/placeholder_image.jpg
-
+    - assets/placeholder.png
   
